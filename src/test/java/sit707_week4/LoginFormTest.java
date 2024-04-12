@@ -57,11 +57,9 @@ public class LoginFormTest
         Assert.assertTrue("Login should fail with wrong username and wrong password", status.isLoginSuccess()== false);
     }
 
-    // ... Continue to add test cases for each condition in your decision table ...
-
     @Test
     public void testSuccessCorrectUsernameAndCorrectPasswordAndDontCareValCode() {
-        LoginStatus status = LoginForm.login("Mark", "Mark216293263"); // Replace with correct values
+        LoginStatus status = LoginForm.login("Mark", "Mark216293263");
         Assert.assertTrue("Login should succeed with correct username and password", status.isLoginSuccess());
     }
     
